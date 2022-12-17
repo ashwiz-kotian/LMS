@@ -4,9 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:textAlignment="center"
-    tools:context=".MainActivity"
-    android:background="#E4000000">
+    android:layout_gravity="center_vertical"
+    android:background="#E4000000"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="end"
+        android:text="DUE"
+        android:textColor="#FDFDFD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView7"
@@ -22,107 +38,187 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
+        app:layout_constraintVertical_bias="0.832" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="120dp"
-        android:layout_height="55dp"
-        android:text="DATE"
-        android:textColor="#FFC107"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="BOOKS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintVertical_bias="0.222" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="361dp"
         android:layout_height="263dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668">
+        app:layout_constraintVertical_bias="0.427">
 
-        <LinearLayout
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <EditText
-                android:layout_width="347dp"
-                android:layout_height="37dp"
-                android:layout_margin="10dp"
-                android:background="#F1C237"
-                android:text="Book1"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:layout_width="350dp"
-                android:layout_height="42dp"
-                android:layout_margin="10dp"
-                android:background="#F1C237"
-                android:text="Book1"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
 
-            <EditText
-                android:layout_width="350dp"
-                android:layout_height="39dp"
-                android:layout_margin="10dp"
-                android:background="#F1C237"
-                android:text="Book1"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="TextView"
+                    android:textColor="#F1F1F1" />
+            </TableRow>
 
-            <EditText
-                android:layout_width="346dp"
-                android:layout_height="43dp"
-                android:layout_margin="10dp"
-                android:background="#F1C237"
-                android:text="Book1"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+
+        </TableLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="120dp"
-        android:layout_height="55dp"
-        android:text="BOOKS"
-        android:textColor="#FFC107"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
-
-    <View
-        android:id="@+id/vector_3"
-        android:layout_width="416dp"
-        android:layout_height="62dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/vector_3"
-        app:circularflow_defaultRadius="10dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="420dp"
@@ -130,7 +226,7 @@
         android:background="@drawable/curve"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="53dp" />
+        tools:layout_editor_absoluteY="-1dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
